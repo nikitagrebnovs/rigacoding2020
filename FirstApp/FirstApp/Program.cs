@@ -7,24 +7,9 @@ namespace FirstApp
         static void Main(string[] args)
         {
 
-            //cilveks ievada skaitli
-            //parbaudam vai ir > par 5
-            //ja ir izvadam ##
-            //ja nav #
+       
 
-            Console.WriteLine("Ievadiet skaitli pārbaudei!");
-            String number = Console.ReadLine();
-
-            int number2 = Convert.ToInt32(number);
-            if(number2>5 && number2!=9)
-            {
-                Console.WriteLine("##");s
-            }
-            else
-            {
-                Console.WriteLine("#");
-            }
-            Console.ReadLine();
+            
 
 
 
@@ -84,7 +69,7 @@ namespace FirstApp
 
 
         }
-
+ 
         static void tapat()
         {
             int a = 5;
@@ -103,5 +88,28 @@ namespace FirstApp
 
             Console.ReadLine();
         }
+
+        static void homework()
+    {
+        Console.WriteLine("Enter string");
+        String word = Console.ReadLine();
+
+        int countLetters = word.Length;
+
+        if (countLetters < 5 || word == "aaaaaaaa")
+        {
+            Console.WriteLine("Your string is correct");
+        }
+        else
+        {
+            Console.WriteLine("Try again! ");
+        }
+
+        Console.ReadLine();
     }
+
+
+    }
+
+
 }
