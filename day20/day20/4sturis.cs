@@ -6,9 +6,14 @@ namespace day20
 {
     class _4sturis: Figura
     {
+        public _4sturis(double a, double b)
+        {
+            this.platums = a;
+            this.augstums = b;
+        }
 
 
-        public void laukums()
+        public override void laukums()
         {
 
             this.summa = platums * augstums;

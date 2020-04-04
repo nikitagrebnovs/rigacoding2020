@@ -1,0 +1,176 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8D64112A-EC44-4F93-ABAA-1539E2F4A313}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>NikitaApp</RootNamespace>
+    <AssemblyName>NikitaApp</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.12.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.Core.WinForms, Version=17.4460.0.55, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+      <HintPath>..\packages\Syncfusion.Core.WinForms.17.4.0.55\lib\net46\Syncfusion.Core.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.Data.WinForms, Version=17.4460.0.55, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+      <HintPath>..\packages\Syncfusion.Data.WinForms.17.4.0.55\lib\net46\Syncfusion.Data.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.DataSource.WinForms, Version=17.4460.0.55, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+      <HintPath>..\packages\Syncfusion.DataSource.WinForms.17.4.0.55\lib\net46\Syncfusion.DataSource.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.GridCommon.WinForms, Version=17.4460.0.55, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+      <HintPath>..\packages\Syncfusion.GridCommon.WinForms.17.4.0.55\lib\net46\Syncfusion.GridCommon.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.Licensing, Version=17.4460.0.55, Culture=neutral, PublicKeyToken=632609b4d040f6b4, processorArchitecture=MSIL">
+      <HintPath>..\packages\Syncfusion.Licensing.17.4.0.55\lib\net46\Syncfusion.Licensing.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.SfDataGrid.WinForms, Version=17.4460.0.55, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+      <HintPath>..\packages\Syncfusion.SfDataGrid.WinForms.17.4.0.55\lib\net46\Syncfusion.SfDataGrid.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.SfInput.WinForms, Version=17.4460.0.55, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+      <HintPath>..\packages\Syncfusion.SfInput.WinForms.17.4.0.55\lib\net46\Syncfusion.SfInput.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.SfListView.WinForms, Version=17.4460.0.55, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+      <HintPath>..\packages\Syncfusion.SfListView.WinForms.17.4.0.55\lib\net46\Syncfusion.SfListView.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.Shared.Base, Version=17.4460.0.55, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+      <HintPath>..\packages\Syncfusion.Shared.Base.17.4.0.55\lib\net46\Syncfusion.Shared.Base.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddObject.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AddObject.Designer.cs">
+      <DependentUpon>AddObject.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditData.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="EditData.Designer.cs">
+      <DependentUpon>EditData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditObjectId.cs" />
+    <Compile Include="Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main.Designer.cs">
+      <DependentUpon>Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Menu2.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Menu2.Designer.cs">
+      <DependentUpon>Menu2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ObjectInfo.cs" />
+    <Compile Include="Parskats.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Parskats.Designer.cs">
+      <DependentUpon>Parskats.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Labosana.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Labosana.Designer.cs">
+      <DependentUpon>Labosana.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SaveData.cs" />
+    <EmbeddedResource Include="AddObject.resx">
+      <DependentUpon>AddObject.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditData.resx">
+      <DependentUpon>EditData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main.resx">
+      <DependentUpon>Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu2.resx">
+      <DependentUpon>Menu2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Parskats.resx">
+      <DependentUpon>Parskats.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Labosana.resx">
+      <DependentUpon>Labosana.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Content Include="css\font-awesome.css" />
+    <Content Include="css\font-awesome.min.css" />
+    <Content Include="fonts\fontawesome-webfont.eot" />
+    <Content Include="fonts\fontawesome-webfont.ttf" />
+    <Content Include="fonts\fontawesome-webfont.woff" />
+    <Content Include="fonts\fontawesome-webfont.woff2" />
+    <Content Include="fonts\FontAwesome.otf" />
+    <None Include="data.json" />
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\font-awesome.css" />
+    <Content Include="Content\font-awesome.min.css" />
+    <Content Include="fonts\fontawesome-webfont.svg" />
+    <Content Include="Properties\11.jfif" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
