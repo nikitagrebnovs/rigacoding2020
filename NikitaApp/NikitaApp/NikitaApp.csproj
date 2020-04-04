@@ -82,6 +82,12 @@
     <Compile Include="AddObject.Designer.cs">
       <DependentUpon>AddObject.cs</DependentUpon>
     </Compile>
+    <Compile Include="Component1.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Component1.Designer.cs">
+      <DependentUpon>Component1.cs</DependentUpon>
+    </Compile>
     <Compile Include="EditData.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -89,17 +95,11 @@
       <DependentUpon>EditData.cs</DependentUpon>
     </Compile>
     <Compile Include="EditObjectId.cs" />
-    <Compile Include="Main.cs">
+    <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Main.Designer.cs">
-      <DependentUpon>Main.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Menu2.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Menu2.Designer.cs">
-      <DependentUpon>Menu2.cs</DependentUpon>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
     <Compile Include="ObjectInfo.cs" />
     <Compile Include="Parskats.cs">
@@ -108,32 +108,26 @@
     <Compile Include="Parskats.Designer.cs">
       <DependentUpon>Parskats.cs</DependentUpon>
     </Compile>
-    <Compile Include="Labosana.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Labosana.Designer.cs">
-      <DependentUpon>Labosana.cs</DependentUpon>
-    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SaveData.cs" />
+    <Compile Include="UserControl1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl1.Designer.cs">
+      <DependentUpon>UserControl1.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="AddObject.resx">
       <DependentUpon>AddObject.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="EditData.resx">
       <DependentUpon>EditData.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Main.resx">
-      <DependentUpon>Main.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Menu2.resx">
-      <DependentUpon>Menu2.cs</DependentUpon>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Parskats.resx">
       <DependentUpon>Parskats.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Labosana.resx">
-      <DependentUpon>Labosana.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -151,6 +145,9 @@
     <Content Include="fonts\fontawesome-webfont.woff" />
     <Content Include="fonts\fontawesome-webfont.woff2" />
     <Content Include="fonts\FontAwesome.otf" />
+    <EmbeddedResource Include="UserControl1.resx">
+      <DependentUpon>UserControl1.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="data.json" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

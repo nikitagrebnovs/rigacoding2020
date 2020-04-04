@@ -121,6 +121,7 @@
             this.gradientPanel1.Padding = new System.Windows.Forms.Padding(5, 5, 0, 0);
             this.gradientPanel1.Size = new System.Drawing.Size(126, 38);
             this.gradientPanel1.TabIndex = 0;
+            this.gradientPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.gradientPanel1_Paint);
             // 
             // gradientPanel3
             // 
@@ -146,6 +147,7 @@
             this.idlable.Name = "idlable";
             this.idlable.Size = new System.Drawing.Size(0, 21);
             this.idlable.TabIndex = 1;
+            this.idlable.Click += new System.EventHandler(this.idlable_Click);
             // 
             // autoLabel4
             // 
@@ -155,6 +157,7 @@
             this.autoLabel4.Size = new System.Drawing.Size(92, 21);
             this.autoLabel4.TabIndex = 0;
             this.autoLabel4.Text = "Objekta Nr.";
+            this.autoLabel4.Click += new System.EventHandler(this.autoLabel4_Click);
             // 
             // autoLabel2
             // 
@@ -175,10 +178,12 @@
             this.autoLabel1.Size = new System.Drawing.Size(92, 21);
             this.autoLabel1.TabIndex = 0;
             this.autoLabel1.Text = "Objekta Nr.";
+            this.autoLabel1.Click += new System.EventHandler(this.autoLabel1_Click);
             // 
             // gradientPanel2
             // 
             this.gradientPanel2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.gradientPanel2.AutoSize = true;
             this.gradientPanel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(242)))), ((int)(((byte)(247)))));
             this.gradientPanel2.Controls.Add(this.gradientPanel9);
             this.gradientPanel2.Controls.Add(this.button3);
@@ -207,6 +212,7 @@
             this.gradientPanel9.Name = "gradientPanel9";
             this.gradientPanel9.Size = new System.Drawing.Size(171, 38);
             this.gradientPanel9.TabIndex = 14;
+            this.gradientPanel9.Paint += new System.Windows.Forms.PaintEventHandler(this.gradientPanel9_Paint);
             // 
             // KMinput
             // 
@@ -214,6 +220,7 @@
             this.KMinput.Name = "KMinput";
             this.KMinput.Size = new System.Drawing.Size(54, 29);
             this.KMinput.TabIndex = 12;
+            this.KMinput.TextChanged += new System.EventHandler(this.KMinput_TextChanged);
             // 
             // label3
             // 
@@ -223,6 +230,7 @@
             this.label3.Size = new System.Drawing.Size(107, 21);
             this.label3.TabIndex = 11;
             this.label3.Text = "Nobraukums:";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // button3
             // 
@@ -263,6 +271,7 @@
             this.gradientPanel8.Name = "gradientPanel8";
             this.gradientPanel8.Size = new System.Drawing.Size(188, 38);
             this.gradientPanel8.TabIndex = 13;
+            this.gradientPanel8.Paint += new System.Windows.Forms.PaintEventHandler(this.gradientPanel8_Paint);
             // 
             // inputPhone
             // 
@@ -293,6 +302,7 @@
             this.gradientPanel7.Name = "gradientPanel7";
             this.gradientPanel7.Size = new System.Drawing.Size(179, 60);
             this.gradientPanel7.TabIndex = 12;
+            this.gradientPanel7.Paint += new System.Windows.Forms.PaintEventHandler(this.gradientPanel7_Paint);
             // 
             // label1
             // 
@@ -302,6 +312,7 @@
             this.label1.Size = new System.Drawing.Size(66, 21);
             this.label1.TabIndex = 11;
             this.label1.Text = "Statuss:";
+            this.label1.Click += new System.EventHandler(this.label1_Click_1);
             // 
             // checkDONE
             // 
@@ -312,6 +323,7 @@
             this.checkDONE.TabIndex = 9;
             this.checkDONE.Text = "Pabeigts";
             this.checkDONE.UseVisualStyleBackColor = true;
+            this.checkDONE.CheckedChanged += new System.EventHandler(this.checkDONE_CheckedChanged);
             // 
             // checkInProcess
             // 
@@ -322,15 +334,16 @@
             this.checkInProcess.TabIndex = 10;
             this.checkInProcess.Text = "Procesā";
             this.checkInProcess.UseVisualStyleBackColor = true;
+            this.checkInProcess.CheckedChanged += new System.EventHandler(this.checkInProcess_CheckedChanged);
             // 
             // dateInput
             // 
-            this.dateInput.DateTimePattern = Syncfusion.WinForms.Input.Enums.DateTimePattern.Custom;
             this.dateInput.Location = new System.Drawing.Point(532, 8);
             this.dateInput.Name = "dateInput";
             this.dateInput.Size = new System.Drawing.Size(131, 25);
             this.dateInput.TabIndex = 7;
             this.dateInput.Value = new System.DateTime(2020, 3, 31, 0, 0, 0, 0);
+            this.dateInput.Click += new System.EventHandler(this.dateInput_Click);
             // 
             // gradientPanel6
             // 
@@ -372,6 +385,7 @@
             // 
             this.menuStrip2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(236)))), ((int)(((byte)(243)))));
             this.menuStrip2.Dock = System.Windows.Forms.DockStyle.None;
+            this.menuStrip2.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.menuStrip2.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.montāžaToolStripMenuItem,
             this.veramoVārtuToolStripMenuItem,
@@ -424,6 +438,7 @@
             this.veramoVārtuToolStripMenuItem.Name = "veramoVārtuToolStripMenuItem";
             this.veramoVārtuToolStripMenuItem.Size = new System.Drawing.Size(81, 20);
             this.veramoVārtuToolStripMenuItem.Text = "Automātika";
+            this.veramoVārtuToolStripMenuItem.Click += new System.EventHandler(this.veramoVārtuToolStripMenuItem_Click);
             // 
             // veramoVārtuToolStripMenuItem1
             // 
@@ -451,6 +466,7 @@
             this.citsToolStripMenuItem.Name = "citsToolStripMenuItem";
             this.citsToolStripMenuItem.Size = new System.Drawing.Size(39, 20);
             this.citsToolStripMenuItem.Text = "Cits";
+            this.citsToolStripMenuItem.Click += new System.EventHandler(this.citsToolStripMenuItem_Click);
             // 
             // fotoelementiToolStripMenuItem
             // 
@@ -491,6 +507,7 @@
             this.papildusPultisToolStripMenuItem.Name = "papildusPultisToolStripMenuItem";
             this.papildusPultisToolStripMenuItem.Size = new System.Drawing.Size(153, 22);
             this.papildusPultisToolStripMenuItem.Text = "Papildus pultis";
+            this.papildusPultisToolStripMenuItem.Click += new System.EventHandler(this.papildusPultisToolStripMenuItem_Click);
             // 
             // toolStripMenuItem2
             // 
@@ -532,6 +549,7 @@
             this.radioUztvērējsToolStripMenuItem.Name = "radioUztvērējsToolStripMenuItem";
             this.radioUztvērējsToolStripMenuItem.Size = new System.Drawing.Size(153, 22);
             this.radioUztvērējsToolStripMenuItem.Text = "Radio uztvērējs";
+            this.radioUztvērējsToolStripMenuItem.Click += new System.EventHandler(this.radioUztvērējsToolStripMenuItem_Click);
             // 
             // remontdarbiToolStripMenuItem
             // 
@@ -544,6 +562,7 @@
             this.remontdarbiToolStripMenuItem.Name = "remontdarbiToolStripMenuItem";
             this.remontdarbiToolStripMenuItem.Size = new System.Drawing.Size(88, 20);
             this.remontdarbiToolStripMenuItem.Text = "Remontdarbi";
+            this.remontdarbiToolStripMenuItem.Click += new System.EventHandler(this.remontdarbiToolStripMenuItem_Click);
             // 
             // mehaniskoBojājumuRemontsToolStripMenuItem
             // 
@@ -586,6 +605,7 @@
             this.ievadeDarbi.Name = "ievadeDarbi";
             this.ievadeDarbi.Size = new System.Drawing.Size(255, 29);
             this.ievadeDarbi.TabIndex = 13;
+            this.ievadeDarbi.TextChanged += new System.EventHandler(this.ievadeDarbi_TextChanged);
             // 
             // autoLabel8
             // 
@@ -594,6 +614,7 @@
             this.autoLabel8.Size = new System.Drawing.Size(105, 21);
             this.autoLabel8.TabIndex = 9;
             this.autoLabel8.Text = "Veiktie darbi:";
+            this.autoLabel8.Click += new System.EventHandler(this.autoLabel8_Click);
             // 
             // listBox1
             // 
@@ -602,9 +623,10 @@
             this.listBox1.ItemHeight = 21;
             this.listBox1.Location = new System.Drawing.Point(5, 73);
             this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(364, 275);
+            this.listBox1.Size = new System.Drawing.Size(364, 254);
             this.listBox1.TabIndex = 12;
             this.listBox1.MouseClick += new System.Windows.Forms.MouseEventHandler(this.listBox1_MouseClick);
+            this.listBox1.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
             // 
             // gradientPanel5
             // 
@@ -617,6 +639,7 @@
             this.gradientPanel5.Name = "gradientPanel5";
             this.gradientPanel5.Size = new System.Drawing.Size(275, 38);
             this.gradientPanel5.TabIndex = 4;
+            this.gradientPanel5.Paint += new System.Windows.Forms.PaintEventHandler(this.gradientPanel5_Paint);
             // 
             // checkRamex
             // 
@@ -627,6 +650,7 @@
             this.checkRamex.TabIndex = 7;
             this.checkRamex.Text = "RAMEX";
             this.checkRamex.UseVisualStyleBackColor = true;
+            this.checkRamex.CheckedChanged += new System.EventHandler(this.checkRamex_CheckedChanged);
             // 
             // checkVap
             // 
@@ -661,6 +685,7 @@
             this.gradientPanel4.Padding = new System.Windows.Forms.Padding(5, 5, 0, 0);
             this.gradientPanel4.Size = new System.Drawing.Size(292, 38);
             this.gradientPanel4.TabIndex = 2;
+            this.gradientPanel4.Paint += new System.Windows.Forms.PaintEventHandler(this.gradientPanel4_Paint);
             // 
             // AdressInput
             // 
@@ -672,6 +697,7 @@
             this.AdressInput.Name = "AdressInput";
             this.AdressInput.Size = new System.Drawing.Size(213, 29);
             this.AdressInput.TabIndex = 1;
+            this.AdressInput.TextChanged += new System.EventHandler(this.AdressInput_TextChanged);
             // 
             // autoLabel6
             // 
@@ -681,6 +707,7 @@
             this.autoLabel6.Size = new System.Drawing.Size(66, 21);
             this.autoLabel6.TabIndex = 0;
             this.autoLabel6.Text = "Adrese:";
+            this.autoLabel6.Click += new System.EventHandler(this.autoLabel6_Click);
             // 
             // miniToolStrip
             // 
@@ -688,10 +715,12 @@
             this.miniToolStrip.AccessibleRole = System.Windows.Forms.AccessibleRole.ComboBox;
             this.miniToolStrip.AutoSize = false;
             this.miniToolStrip.Dock = System.Windows.Forms.DockStyle.None;
+            this.miniToolStrip.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.miniToolStrip.Location = new System.Drawing.Point(201, 45);
             this.miniToolStrip.Name = "miniToolStrip";
             this.miniToolStrip.Size = new System.Drawing.Size(194, 36);
             this.miniToolStrip.TabIndex = 11;
+            this.miniToolStrip.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.miniToolStrip_ItemClicked);
             // 
             // AddObject
             // 
@@ -733,6 +762,7 @@
             this.gradientPanel4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.AdressInput)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 

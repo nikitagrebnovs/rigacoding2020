@@ -14,8 +14,9 @@ namespace NikitaApp
 {
     public partial class AddObject : UserControl
     {
+        private bool ownerCheck;
+        private bool statusCheck;
 
-        
 
         public AddObject()
         {
@@ -93,7 +94,13 @@ namespace NikitaApp
 
         private void checkBox1_CheckedChanged(object sender, EventArgs e)
         {
-
+            if (ownerCheck)
+            {
+                checkVap.Checked = true;
+                ownerCheck = false;
+            }
+            else
+                checkVap.Checked = false;
         }
 
         private void autoLabel9_Click(object sender, EventArgs e)
@@ -345,7 +352,7 @@ namespace NikitaApp
 
             foreach(String a in listBox1.Items)
             {
-                works += a+" ";
+                works += a+";";
             }
 
             List<SaveData> data = new List<SaveData>();
@@ -421,6 +428,159 @@ namespace NikitaApp
         private void button3_Click(object sender, EventArgs e)
         {
             ClearButtom();
+        }
+
+        private void gradientPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void idlable_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void autoLabel4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void autoLabel1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void gradientPanel9_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void KMinput_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void gradientPanel8_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void gradientPanel7_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void label1_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void checkDONE_CheckedChanged(object sender, EventArgs e)
+        {
+            if (statusCheck)
+            {
+                checkDONE.Checked = true;
+                statusCheck = false;
+            }
+            else
+                checkDONE.Checked = false;
+        }
+
+        private void checkInProcess_CheckedChanged(object sender, EventArgs e)
+        {
+            if (statusCheck)
+            {
+                checkInProcess.Checked = true;
+                statusCheck = false;
+            }
+            else
+                checkDONE.Checked = false;
+        }
+
+        private void dateInput_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void veramoVārtuToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void citsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void papildusPultisToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void radioUztvērējsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void remontdarbiToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ievadeDarbi_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void autoLabel8_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void gradientPanel5_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void checkRamex_CheckedChanged(object sender, EventArgs e)
+        {
+            if (ownerCheck)
+            {
+                checkVap.Checked = true;
+                ownerCheck = false;
+            }
+            else
+                checkVap.Checked = false;
+        }
+
+        private void gradientPanel4_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void AdressInput_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void autoLabel6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void miniToolStrip_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+
         }
     }
 }

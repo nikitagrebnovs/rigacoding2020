@@ -91,7 +91,7 @@ namespace NikitaApp
 
         public String GetWorks()
         {
-            return object_status;
+            return object_Works;
         }
         public void SetWorks(String object_Works)
         {

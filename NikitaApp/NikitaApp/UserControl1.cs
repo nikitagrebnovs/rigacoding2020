@@ -10,23 +10,11 @@ using System.Windows.Forms;
 
 namespace NikitaApp
 {
-    public partial class Menu2 : UserControl
+    public partial class UserControl1 : UserControl
     {
-        public Menu2()
+        public UserControl1()
         {
             InitializeComponent();
-        }
-
-        private void labosana1_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void RestPanel()
-        {
-
-            
-
         }
     }
 }

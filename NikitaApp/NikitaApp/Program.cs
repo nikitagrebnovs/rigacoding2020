@@ -14,11 +14,11 @@ namespace NikitaApp
         [STAThread]
         static void Main()
         {
-           
+            Syncfusion.Licensing.SyncfusionLicenseProvider.RegisterLicense("MjMzNDk3QDMxMzgyZTMxMmUzMGN2cFdZeEg1ck1nSG9iTE9Bd1hWZ3EwblZBRkMwdjRUVS9SM0d5NURLYUE9");
 
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Main());
+            Application.Run(new Form1());
             
     }
     }
